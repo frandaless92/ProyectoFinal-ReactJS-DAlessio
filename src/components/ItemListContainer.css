@@ -1,0 +1,13 @@
+.itemListCont {
+  text-align: center;
+}
+
+.titleWelcome {
+  margin: 10px;
+  color: #9da715;
+  font-size: 48px;
+}
+
+.descriptionText {
+  font-size: 24px;
+}
