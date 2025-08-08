@@ -3,6 +3,16 @@
   margin-right: 20px;
 }
 
+.cartLink {
+  text-decoration: none;
+}
+
+.cartIcon {
+  color: grey;
+  width: 32px;
+  height: 32px;
+}
+
 .cartIcon:hover {
   filter: drop-shadow(0 0 1px black);
   cursor: pointer;
@@ -10,4 +20,6 @@
 
 .totalItems {
   font-size: 16px;
+  text-decoration: none !important;
+  color: black;
 }

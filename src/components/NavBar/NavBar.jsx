@@ -1,9 +1,9 @@
 import logoImg from "../../assets/logo.png";
 import CartWidget from "../CartWidget/CartWidget";
-import "./NavBar.css";
+import "./navbar.css";
 import { Link } from "react-router-dom";
 
-function NavBar(props) {
+function NavBar() {
   return (
     <div className="navbar">
       <div className="imgContainer">
@@ -19,13 +19,8 @@ function NavBar(props) {
             </Link>
           </li>
           <li>
-            <Link to="/categoria/unas" className="items">
-              Uñas
-            </Link>
-          </li>
-          <li>
-            <Link to="/categoria/depilacion" className="items">
-              Depilación
+            <Link to="/categoria/manos" className="items">
+              Manos
             </Link>
           </li>
           <li>
@@ -35,7 +30,7 @@ function NavBar(props) {
           </li>
         </ul>
       </div>
-      <CartWidget items={props.itemsCount} />
+      <CartWidget />
     </div>
   );
 }

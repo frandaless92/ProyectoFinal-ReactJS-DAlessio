@@ -41,28 +41,3 @@
   font-weight: bold;
   color: #e91e63;
 }
-
-.item-button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #e91e63;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.item-button:hover {
-  background-color: #d81b60;
-  transform: scale(1.05);
-}
-
-.item-button:active {
-  transform: scale(1);
-  background-color: #c2185b;
-}

@@ -1,11 +1,26 @@
 import { BsCartCheck } from "react-icons/bs";
-import "./CartWidget.css";
-function CartWidget(props) {
-  return (
+import "./cartwidget.css";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
+import { Link } from "react-router-dom";
+
+function CartWidget() {
+  const { totalQuantity } = useContext(CartContext);
+  const total = totalQuantity();
+
+  const content = (
     <div className="cartContainer">
-      <BsCartCheck className="cartIcon" fill={"grey"} size={32} />
-      <h2 className="totalItems">{props.items}</h2>
+      <BsCartCheck className="cartIcon" />
+      <h2 className="totalItems">{total}</h2>
     </div>
+  );
+
+  return total > 0 ? (
+    <Link to="/cart" className="cartLink">
+      {content}
+    </Link>
+  ) : (
+    content
   );
 }
 

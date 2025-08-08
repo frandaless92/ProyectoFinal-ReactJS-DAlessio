@@ -1,10 +1,10 @@
-import { CircleLoader } from "react-spinners";
-import "./Loading.css";
+import { CircleLoader, RiseLoader } from "react-spinners";
+import "./loading.css";
 
 const Loading = () => {
   return (
     <div className="loading">
-      <CircleLoader color="red" />
+      <RiseLoader color="#e0b984" margin="30px" />
     </div>
   );
 };

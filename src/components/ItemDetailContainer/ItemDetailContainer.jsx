@@ -1,13 +1,13 @@
-import useService from "../../hooks/useService.js";
+import useProduct from "../../hooks/useProduct.js";
 import Loading from "../Loading/Loading";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-  const { serviceId } = useParams();
-  const { service, loading } = useService(serviceId);
+  const { productId } = useParams();
+  const { product, loading } = useProduct(productId);
 
-  return <div>{loading ? <Loading /> : <ItemDetail service={service} />}</div>;
+  return <div>{loading ? <Loading /> : <ItemDetail product={product} />}</div>;
 };
 
 export default ItemDetailContainer;

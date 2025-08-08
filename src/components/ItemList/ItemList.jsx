@@ -1,14 +1,17 @@
 import Item from "../Item/Item";
-import "./ItemList.css";
+import "./itemlist.css";
+import hocFilterProducts from "../../hoc/hocFilterProducts";
 
-const ItemList = ({ services = [] }) => {
+const ItemList = ({ products = [] }) => {
   return (
     <ul className="item-list">
-      {services.map((service) => (
-        <Item service={service} key={service.id} />
+      {products.map((product) => (
+        <Item product={product} key={product.id} />
       ))}
     </ul>
   );
 };
 
-export default ItemList;
+const ItemListWithSearch = hocFilterProducts(ItemList);
+
+export { ItemList, ItemListWithSearch };
