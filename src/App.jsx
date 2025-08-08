@@ -10,7 +10,7 @@ import Checkout from "./components/Checkout/Checkout";
 function App() {
   const textWelcome = "BIENVENIDO/A A NUESTRO PORTAL";
   const descriptext =
-    "Este simulador representa un ecommerce básico para un centro de estética llamado Yanel Lagares & Abru Nails, que ofrece servicios como masajes, depilación y uñas. En él podrá seleccionar el servicio, conocer nuestros importes y concretar la compra.";
+    "Este simulador representa un ecommerce básico para productos de estética llamado Yanel Lagares.";
   return (
     <BrowserRouter>
       <CartProvider>
