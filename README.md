@@ -57,7 +57,7 @@ Permite a los usuarios explorar productos, agregarlos al carrito y completar una
 {
   "buyer": {
     "fullname": "Franco D'Alessio",
-    "phone": "0111524524060",
+    "phone": "0111523232323",
     "email": "f.n.dalessio@gmail.com"
   },
   "products": [
